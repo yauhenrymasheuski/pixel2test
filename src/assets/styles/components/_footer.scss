@@ -1,0 +1,89 @@
+
+.container--footer {
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  @include breakpoint(laptop) {
+    padding-bottom: 130px;
+  }
+
+  &__logo {
+    padding-left: 0;
+  }
+  &__logo-description {
+    opacity: 0.6;
+    font-size: $font-size-regular;
+    padding-left: 5px;
+    line-height: 25px;
+    padding-right: 0;
+  }
+  .footer-menu {
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 30px;
+    margin-top: 40px;
+
+    @include breakpoint(tablet) {
+      padding-right: 60px;
+    }
+
+    @include breakpoint(desktop) {
+      margin-top: 0px;
+      margin-left: 30px;
+    }
+
+    li {
+      margin-bottom: 5px;
+
+      @include breakpoint(tablet) {
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-family: $font-family-regular;
+        font-size: $font-size-regular;
+        opacity: 0.6;
+        color: $footer-menu-color;
+        text-decoration: none;
+        @include transition (all, 0.5s, ease);
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &:first-child {
+        a {
+          font-family: $font-family-medium;
+          font-size: $font-size-medium;
+          opacity: 1;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .dropdown--country {
+    margin-top: 35px;
+    @include breakpoint(desktop) {
+      margin-top: 0;
+    }
+
+
+
+    .btn, .btn:hover, .btn:active, .btn:focus, .btn:active:focus {
+      background: transparent;
+      border: none;
+      color: $white;
+      outline: none;
+    }
+  }
+}
+
+.footer {
+  background: $color-background-footer;
+  color: $white;
+}

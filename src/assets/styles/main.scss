@@ -1,0 +1,21 @@
+/**
+* Pixel2HTML - test
+*/
+
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+// screens:start
+@import 'screens/_base';
+
+// screens:end
+
+// components:start
+@import 'components/_header';
+@import 'components/_slick-theme';
+@import 'components/_footer';
+@import 'components/_nav';
+@import 'components/_forms';
+@import 'components/_buttons';
+// components:end

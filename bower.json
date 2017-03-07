@@ -1,0 +1,12 @@
+{
+  "name": "pixel2html-test-test",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0",
+    "wow": "^1.1.2"
+
+  }
+}

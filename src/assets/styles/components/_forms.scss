@@ -1,0 +1,55 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+
+  &:focus {
+
+  }
+}
+
+
+.link {
+  color: $link-color;
+  @include transition (all, 0.5s, ease);
+
+  &:hover, &:active, &:focus {
+    color: darken($link-color, 20%);
+    text-decoration: none;
+  }
+}
+
+
+.btn {
+  @include transition (all, 0.5s, ease);
+  font-size: $btn-font-size;
+  border: 2px solid $pricing-block-border;
+  color: $btn-color;
+
+  &:hover, &:active, &:focus {
+    color: darken($btn-color, 10%);
+  }
+
+
+  &--active {
+      background: $btn-pricing-active-color;
+      border-color: $btn-pricing-active-color;
+      color: $white;
+
+    &:hover, &:active, &:focus, &:active:focus {
+      background: darken($btn-pricing-active-color, 10%);
+      border-color: darken($btn-pricing-active-color, 10%);
+      color: $white;
+    }
+  }
+
+  &--pricing {
+    width: 100%;
+
+    &:hover {
+      color: darken($btn-color, 10%);
+    }
+  }
+}
